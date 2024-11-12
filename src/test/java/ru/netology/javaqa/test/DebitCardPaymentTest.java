@@ -13,15 +13,14 @@ import ru.netology.javaqa.data.SqlHelper;
 import ru.netology.javaqa.page.DashboardPage;
 import ru.netology.javaqa.page.PaymentPage;
 
-
-import static java.nio.channels.FileChannel.open;
+import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DebitCardPaymentTest {
 
     @BeforeEach
-    void setUp() {
-        Configuration.startMaximized = true;
+    void setUp()  {
+        Configuration.browserSize = String.valueOf(true);
         open("http://localhost:8080");
     }
 

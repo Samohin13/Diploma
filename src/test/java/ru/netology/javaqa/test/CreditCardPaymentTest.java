@@ -1,6 +1,6 @@
 package ru.netology.javaqa.test;
 
-
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import lombok.val;
@@ -13,19 +13,16 @@ import ru.netology.javaqa.data.SqlHelper;
 import ru.netology.javaqa.page.DashboardPage;
 import ru.netology.javaqa.page.PaymentPage;
 
-import java.io.IOException;
-import java.nio.file.Path;
-
-import static java.nio.channels.FileChannel.open;
+import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class CreditCardPaymentTest {
 
     @BeforeEach
-    void setUp() throws IOException {
-        Configuration.startMaximized = true;
-        open(Path.of("http://localhost:8080"));
+    void setUp()  {
+        Configuration.browserSize = String.valueOf(true);
+        open("http://localhost:8080");
     }
 
     @BeforeAll
