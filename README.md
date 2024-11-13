@@ -33,11 +33,11 @@ gradlew clean test -Durl=jdbc:postgresql://localhost:5432/app
 4. Сгенерировать отчеты двумя командами:
 
 ```
-gradlew allureReport
+./gradlew allureReport
 ```
 
 ```
-gradlew allureServe
+./gradlew allureServe
 ```
 
 5. Остановить и удалить все контейнеры командой:
