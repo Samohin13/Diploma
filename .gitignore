@@ -44,3 +44,6 @@ out/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+
+gate-simulator/node_modules
+.idea
