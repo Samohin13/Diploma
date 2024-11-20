@@ -26,9 +26,10 @@ testImplementation 'io.qameta.allure:allure-selenide:2.14.0'
 
 ### **Количество тест-кейсов**
 
-* Всего: *24 тест-кейсов*
-* Успешных: *20 (83.3%)*
-* Неуспешных: *4 (16.7%)*
+* Всего: *24 + *2 **executionError** тест-кейсов*
+* Успешных: *18 (75%)*
+* Неуспешных: *6 (25%)*
+* Test executionError *2
 
 ### **Отчет Gradle:**
 ![Снимок экрана 2024-11-13 123131](https://github.com/user-attachments/assets/affaddad-dcc8-42d1-ab23-ff8c4976687c)
